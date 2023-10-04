@@ -1,0 +1,66 @@
+to make production ready - not just react but there are other packages as weel.
+
+//make your own production ready code
+
+npm is everything but node package manager
+npm manages packages but does not stand for nde package amnager
+npm is a repo for all packages - all packages are hosted here - any package you need to include you can find here and install
+
+//add npm -
+ step 1 - npm init
+ step 2 - give details
+ package.json - configuration for npm, track of what version of package is installed (approx version)
+ why do we need - packages are also known as dependencies ,
+ our project depends on theses, npm takes care of all these versions
+
+we need to install a bundler - bundles,packages app so that it can be shipped to production
+create-react-app uses webpack bundler to build things
+
+we will us parcel in this - easy to configure
+
+to install - npm install -D parcel
+dev dependency - required in development, dont need parcel in prod
+noraml dependency - will be used in prod
+
+if we use ^ in dependency version - will instqall minor version
+if we use ~ in dependency version - will install patch version automatically 
+
+package-lock.json - keeps track of exact version , does not have ^ or ~, diff from package.json
+integratity is a hash which helps - whatever is on my local is what is being used on prod
+
+node modules contains all the code that we fetched from npm
+
+transitive dependencies - a depends on b , b depends on c and so on
+
+
+// to ignite the app
+npx parcel index.html
+
+parcel created a server and hosted onto it
+npx - executing a package
+executing parcel , index.html is the source - creates a dev build and hosts it on the server
+
+
+// features of parcel
+- creates dev build
+- creates local server
+- automatically refreshing our page - HMR - Hot Module Replacement - anthing you change in file it is reflected in server
+- uses a file watching algo to do HMR - keep track of every save and rebuilds it
+- also caching things so therefore faster developement server
+- does image optimization 
+- minify/bundle all the files for prod
+- compress all the files
+- uses consistent hashing 
+- code splitting
+- do differential bundling - so that apps run on older broswers
+- diagnostics
+- error handling
+- can host on https
+- Tree Shaking - remove unused code
+
+// to build for prod using parcel - npx parcel buuld index.html
+this will giv error because in package.json, the entry point is App.js and in command we have mentioned index.html
+therefore delete the line  "main": "App.js", from package.json
+
+
+// broswerslist - make compatible for older broswers
