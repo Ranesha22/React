@@ -1,0 +1,20 @@
+thought process for food ordering
+- planning 
+    1) know what to build - make a mockup 
+
+
+- props - short of property , which you can pass to componenet
+- normal arguments to a function
+
+
+Config driven UI - website driven by data/Config - controlling ui based on data 
+- this data comes from backend \
+
+when you build large scale application put all images in cdn
+like swiggy used cloudenary
+
+why we need keys - 
+react optimizes render cycles, dom will have to insert/delete 
+if key is not present react will rerender all cards, take performance hit if we dont use
+if key is present , react will render only the newly element -> used to optimize greatly
+react says index cannot be used as keys 

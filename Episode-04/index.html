@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <!-- cant change the order of this files, coz the app,js is using the react  -->
+    <!-- not a preffered link, fetching from cdm is a costly op, if I have it inside node modules it will be easy -->
+    <!-- keep chaning url if versions keeo changing -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
+    <!-- <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+
+    <!-- this is treated as a browswer script, considered normal js code therefore use type to specify that 
+    it is module-->
+    <script type="module" src="./App.js"></script>
+       
+
+</body>
+
+</html>
