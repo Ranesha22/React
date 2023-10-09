@@ -1,0 +1,34 @@
+to import named export always use {}
+two types of export/import
+    1) default export/import
+        export deafult compo
+        import compo from "path"
+    2)  named export/import
+        export const compo
+        import {compo} from "path"
+
+everything that can be donw using react can be done using html,css,js
+reeact makes developer experience easy
+optimizes something on webpage so that things happen very fast
+
+react is expert in dom manupulation , so that data and ui layer are in sync
+can do faster and efficient dom manupulation
+is good at dom oprations
+
+hooks - normal js utility func given to us by react, that function has some logic written behind it
+#two very imp - 
+1) useState  - generate state variables, maintains state of component 
+state variable = special state variable, modify it with function , 
+state function = keeps ui in syn with data layer, automatically refresh the ui
+*whenever a state variable updates, react re-renderes a component*
+
+how reacts works -
+1) uses **reconciliation algo** - also known as react fiber - 
+react creates a VIRTUAL DOM (not an actual dom) - represntation of actual dom , it is a js object
+
+DIFF ALGO - finds diff between prev virtual dom and updated virtual dom , calcualte diff between these two virtual dom object and then update the actual dom on every render cycle
+
+react can do efficient dom manupulation, it has a diff maniuplation and has virtual dom - ans to why react is fast
+the state updating fucntion is a trigger that starts the diff algo, whenever you call it react will re-render
+
+2) useEffect
