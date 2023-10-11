@@ -4,7 +4,7 @@ to make production ready - not just react but there are other packages as weel.
 
 npm is everything but node package manager
 npm manages packages but does not stand for nde package amnager
-npm is a repo for all packages - all packages are hosted here - any package you need to include you can find here and install
+npm is a standard repo for all packages - all packages are hosted here - any package you need to include you can find here and install
 
 //add npm -
  step 1 - npm init

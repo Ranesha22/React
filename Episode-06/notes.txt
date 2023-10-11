@@ -1,0 +1,24 @@
+monolith and microservice architecture
+
+monolith - have api, ui, auth ,db conectivity inside same project
+to change any minute thing have to build and compile the whole project
+
+microservice - different service for different jobs, small services combine together form a big app, know as *seperation of concerns* and *single responsibility principle*
+how do these services interact with each other -  all services run on their specific port - services interact by making a call to different service
+
+how react talk to diff microservice
+how to do api call, 2 ways :
+1) as soon as page loads, we can make a call to api and fetch the data and when we get data then render to ui
+loads -> api  call -> render
+2) as soon as page loads, we render ui and then make api call, adn as soon as we get data we re-render the data
+loads -> render -> api call 
+we will use this in React , better ux
+we are rendering twice, but reacts render cycles are very fast beacuse of which we do not face problem
+
+
+useEffect - the callback function in useEffect is called after the component is rendered, as sson as render cycle is finished the the callback func is called
+
+why we need state variables - state variables are used so that we can re-render component
+when state updating fucntion called, then react will re-render componenet and all updated values will be there ie it triggers a reconciliton cycle runs
+
+how const state variable value changes  - when re-render happens then the compoenent is called again and then a new state variable is created with the updated value
