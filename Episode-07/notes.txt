@@ -1,0 +1,30 @@
+useEffect - has 2 args 
+1 callback func
+2 dependancy array
+
+when called - 
+1) called after every render of that component if no depencendy array
+2) if empty dependancy array empty, called on initial render and just once 
+3) if dependency array is passed in then it will be called when the dependancy change.
+
+
+useState - used to create local state variable inside component so never create state variables outside of components. Always use them on top
+
+never use useState inside a condition/for lopp/fucntion  -> can create inconsistencies in react
+
+
+react-router-dom in terms of error gives access to **useRouteError** , gives more info about error.
+
+
+push childer acc to route
+this is done using Outlet of React-router-dom
+outlet will be filled with children acc to path
+
+if using react and want to route to some other page , then never use anchor tag, because whole page gets refreshed -> navigate to new page without reloading whole page
+done using **Link** 
+
+react is know as SPA = only one page , but diff component, just changes the components , all the routing is just components
+
+# routing in web apps - 
+1) client side routing - just loads the component
+2) server-side routing - make anetwork call and fetch the new .html and render it
