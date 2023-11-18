@@ -1,0 +1,5 @@
+Single Responsibility Principle - each component have single responsibility
+write code in modular fashion - code becomes reuseable.maintainable,testable
+
+ break app down ito smaller pieces - make smaller js files - make app more 
+ make smaller bundles of files - process is known as Chunking/code spiltting/lazy loading/dynamic bundling
