@@ -1,0 +1,3 @@
+tailwind - ui styling package
+postcss - tool for transforming css along with javascript
+postcssrc - have to tell postcssrc that we are using tailwind , parcel will use postcssrc to understand tailwind
